@@ -6,7 +6,7 @@
   <title>Networking & Collaboration Event on Whole-room Indirect Calorimetry</title>
   <style>
     :root {
-      --accent: #004d7a;
+      --accent: #3f2805;
       --light: #f5f7fa;
     }
     body {
@@ -53,18 +53,32 @@
       text-align: center;
       font-size: 0.9rem;
       padding: 1rem;
-      background: #eee;
+      background: #ddd6c8;
       margin-top: 2rem;
     }
     a {
-      color: var(--accent);
+      color: #990033;
     }
+    .register-btn {
+      background: #990033;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: font-weight 0.15s, background 0.15s;
+    }
+
+    .register-btn:hover {
+      font-weight: 700;         
+    }
+
     .speaker {
       margin-bottom: 1rem;
     }
     
     .speaker button {
-      background: var(--accent);
+      background: #990033;
       color: white;
       border: none;
       padding: 0.4rem 0.7rem;
@@ -80,21 +94,141 @@
       background: #f0f4f7;
       border-radius: 6px;
     }
+    .banner-header {
+      background: url("../assets/banner.jpg") center / cover no-repeat;
+      color: white;
+      padding: 4rem 1rem;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+    .accordion-header {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 0.5rem 0;
+    }
+    .accordion-content.open {
+      display: block;
+    }
+    .speaker {
+      margin-bottom: 1rem;
+    }
+
+    .speaker-header {
+      width: 100%;
+      background: #990033;
+      border: none;
+      padding: 0.3rem 0;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #222;
+    }
+
+    .speaker-header:hover {
+      font-weight: 600;
+    }
+
+    .arrow {
+      display: inline-block;
+      margin-right: 0.5rem;
+      transition: transform 0.2s;
+    }
+
+    .speaker-bio {
+      padding-left: 1.6rem; /* indent under the name */
+      margin-top: 0.3rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .open .arrow {
+      transform: rotate(90deg);
+    }
+
+
   </style>
 </head>
-<script>
-  function toggleDetails(id) {
-    const box = document.getElementById(id);
-    box.style.display = box.style.display === "block" ? "none" : "block";
-  }
-</script>
+
 <body>
-  <header>
+  <header class="banner-header">
     <h1>Networking & Collaboration Event<br>on Whole-room Indirect Calorimetry</h1>
-    <p>26 – 27 February 2026 · Steno Diabetes Center Aarhus, Denmark</p>
+    <p><strong>26 – 27 February 2026 · Aarhus, Denmark</strong></p>
   </header>
 
   <main>
+
+    <section>
+      <h2>Practical Information</h2>
+      <p>
+        📍 <strong>Venue:</strong> Aarhus University Hospital, Steno Diabetes Center Aarhus — Auditorium Verdensrummet<br>
+        📫 <strong>Address:</strong> Palle Juul-Jensens Boulevard 11, Entrance A, 8200 Aarhus N, Denmark<br>
+        📅 <strong>Event Date:</strong> The meeting starts at 10:30 on Thursday, 26 February, and ends at 15:00 on Friday, 27 February 2026.<br>
+        💰 <strong>Registration Fee:</strong> None — participation is free<br>
+      </p> 
+      <p style="text-align:center; margin-top:1.5rem;">
+        <a class="register-btn" href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frm.plan2learn.dk%2Fdl.aspx%3Fxmg%3D13a4117b-f630-4889-9f77-56f41a39348e%26r%3DKursusValg.aspx%3Fid%3D141428&data=05%7C02%7Cninaz%40ph.au.dk%7Cd7864f622fb4422da13e08de2cc8dffa%7C61fd1d36fecb47cab7d7d0df0370a198%7C1%7C0%7C638997438443552132%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lZKXYmYqLsECunLMn7l6CSGFjJiS0d8zekfi5kkjG9Q%3D&reserved=0">
+          Register Here
+        </a>
+      </p>
+      <p>
+      ⏰ <strong>Deadlines:</strong>
+        <ul>
+          <li>Abstract submission: <strong>Monday, 19 January 2026</strong> (end of day, CET)</li>
+          <li>Event registration: <strong>Wednesday, 11 February 2026</strong> (end of day, CET)</li> 
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>Confirmed Keynote Speakers</h2>
+
+      <div class="speaker">
+        <button class="speaker-header" data-target="bio-anja">
+          <span class="arrow">▶</span>
+          Anja Bosy-Westphal
+        </button>
+        <div id="bio-anja" class="speaker-bio hidden">
+          <p>Professor of Human Nutrition, Christian-Albrechts-University of Kiel, Germany</p>
+          <p>Prof. Bosy-Westphal is an internationally recognized expert on human energy balance and its role in the prevention and treatment of cardiometabolic and endocrine diseases. Her work combines advanced body composition analysis with WRIC-based studies to elucidate mechanisms underlying metabolic regulation.</p>
+        </div>
+      </div>
+
+      <div class="speaker">
+        <button class="speaker-header" data-target="bio-kong">
+          <span class="arrow">▶</span>
+          Kong Chen
+        </button>
+        <div id="bio-kong" class="speaker-bio hidden">
+          <p>Co-Director, Metabolic Clinical Research Unit  Section Chief, Energy Metabolism Section Director, Human Energy & Body Weight Regulation Core National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), NIH, Bethesda, MD</p>
+          <p>Dr. Chen is a pioneer in human energy metabolism research and the lead author of the only published reporting guidelines for whole-room indirect calorimetry (WRIC). His groundbreaking work on thermoregulation and physical activity regulation has substantially advanced understanding of how energy metabolism impacts nutrition and chronic disease.</p>
+        </div>
+      </div>
+      
+      <div class="speaker">
+        <button class="speaker-header" data-target="bio-bret">
+          <span class="arrow">▶</span>
+          Bret Goodpaster
+        </button>
+        <div id="bio-bret" class="speaker-bio hidden">
+          <p>Scientific Director, AdventHealth Translational Research Institute Professor, University of Central Florida College of Medicine, Orlando, FL</p>
+          <p>Dr. Goodpaster is a leading researcher in the pathophysiology of human aging, obesity, diabetes, and exercise biology. He has extensive experience in conducting and analyzing metabolic studies using WRIC and has made seminal contributions to understanding insulin resistance and skeletal muscle metabolism.</p>
+        </div>
+      </div>
+    
+    </section>
+
     <section>
       <h2>About the Event</h2>
       <p>
@@ -106,58 +240,6 @@
         exchange around methodological, analytical, and collaborative aspects of whole-room indirect 
         calorimetry.
       </p>
-    </section>
-
-    <section>
-      <h2>Practical Information</h2>
-      <p>
-        📍 <strong>Venue:</strong> Steno Diabetes Center Aarhus, Denmark<br>
-        📅 <strong>Date:</strong> 26 – 27 February 2026<br>
-        💰 <strong>Registration Fee:</strong> None — participation is free<br>
-      </p>
-      <p style="text-align:center; margin-top:1.5rem;">
-        <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frm.plan2learn.dk%2Fdl.aspx%3Fxmg%3D13a4117b-f630-4889-9f77-56f41a39348e%26r%3DKursusValg.aspx%3Fid%3D141428&data=05%7C02%7Cninaz%40ph.au.dk%7Cd7864f622fb4422da13e08de2cc8dffa%7C61fd1d36fecb47cab7d7d0df0370a198%7C1%7C0%7C638997438443552132%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lZKXYmYqLsECunLMn7l6CSGFjJiS0d8zekfi5kkjG9Q%3D&reserved=0"
-           style="background: var(--accent);
-                  color: white;
-                  padding: 0.7rem 1.2rem;
-                  border-radius: 6px;
-                  text-decoration: none;
-                  font-weight: 600;">
-          Register Here
-        </a>
-      </p>
-    </section>
-
-    <section>
-      <h2>Confirmed Keynote Speakers</h2>
-    
-      <div class="speaker">
-        <strong>Anja Bosy-Westphal</strong><br>
-        <button onclick="toggleDetails('speaker1')">More info</button>
-        <div class="speaker-details" id="speaker1">
-          <p>Professor of Human Nutrition, Christian-Albrechts-University of Kiel, Germany</p>
-          <p>Prof. Bosy-Westphal is an internationally recognized expert on human energy balance and its role in the prevention and treatment of cardiometabolic and endocrine diseases. Her work combines advanced body composition analysis with WRIC-based studies to elucidate mechanisms underlying metabolic regulation.</p>
-        </div>
-      </div>
-    
-      <div class="speaker">
-        <strong>Kong Chen</strong><br>
-        <button onclick="toggleDetails('speaker2')">More info</button>
-        <div class="speaker-details" id="speaker2">
-          <p>Co-Director, Metabolic Clinical Research Unit  Section Chief, Energy Metabolism Section Director, Human Energy & Body Weight Regulation Core National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), NIH, Bethesda, MD</p>
-          <p>Dr. Chen is a pioneer in human energy metabolism research and the lead author of the only published reporting guidelines for whole-room indirect calorimetry (WRIC). His groundbreaking work on thermoregulation and physical activity regulation has substantially advanced understanding of how energy metabolism impacts nutrition and chronic disease.</p>
-        </div>
-      </div>
-    
-      <div class="speaker">
-        <strong>Bret Goodpastor</strong><br>
-        <button onclick="toggleDetails('speaker3')">More info</button>
-        <div class="speaker-details" id="speaker3">
-          <p>Scientific Director, AdventHealth Translational Research Institute Professor, University of Central Florida College of Medicine, Orlando, FL</p>
-          <p>o	Dr. Goodpaster is a leading researcher in the pathophysiology of human aging, obesity, diabetes, and exercise biology. He has extensive experience in conducting and analyzing metabolic studies using WRIC and has made seminal contributions to understanding insulin resistance and skeletal muscle metabolism.</p>
-        </div>
-      </div>
-    
     </section>
 
     <section>
@@ -187,22 +269,110 @@
         Registration is required for all participants, including those not submitting an abstract.
       </p>
       <p>
-        Please note that the abstract submission deadline is Monday, January 19, 2026 (end of day, CET). 
+        Please note that the abstract submission deadline is <strong>Monday, 19 January 2026</strong> (end of day, CET). 
         Notification of acceptance will be sent no later than Monday, February 2, 2026.
       </p>
+    </section>
+    <section>
+      <h2>Travel Information</h2>
+      <p>If you plan to fly, you have several convenient options for arriving in Aarhus:</p>
+      <ul>
+        <li>
+          🚄 <strong>By Train</strong> — Aarhus is well connected by Denmark’s national rail network, as well as to 
+          Germany. Direct trains from Copenhagen take about 3–3.5 hours and trains from Hamburg. Trains arrive at Aarhus Central Station in the city centre.
+          For timetables and tickets please go to 
+          <a href="https://www.dsb.dk/en/" target="_blank">www.dsb.dk</a>.
+          Trains from or through Germany can be booked through <a href="https://int.bahn.de/en?dbkanal_007=sprachauswahl-en" target="_blank">Deutsche Bahn</a> instead
+        </li>
+        <li>
+          ✈️ <strong>Copenhagen Airport (CPH, Kastrup Airport)</strong> is the largest airport in Denmark. From there you have easy rail or bus access to Aarhus:
+          <ul>
+            <li>🚄 Direct train from Copenhagen Airport to Aarhus Central runs frequently and takes about 3 hours. 
+              For timetables and tickets please go to <a href="https://www.dsb.dk/en/" target="_blank">www.dsb.dk</a>.
+              Book early for discounted DSB Orange tickets (valid only for the selected departure).
+            </li>
+            <li>🚌&⛴️ Direct long-distance buses run from Copenhagen Airport to Aarhus in about 4 hours. The bus drives onto a ferry, where you can get off the bus and walk around the ferry.
+              Book via <a href="https://www.kombardoexpressen.com/booking" target="_blank">Kombardoexpressen.</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          ✈️ <strong>Billund Airport (BLL)</strong> — from Billund there is a regular airport bus (route 912X) to Aarhus, taking about 50 minutes. 
+          For tickets and timetables go to <a href="https://www.midttrafik.dk/english/" target="">www.midttrafik.dk</a>.
+        </li>
+        <li>
+          ✈️ <strong>Aarhus Airport (AAR)</strong> - <a href="https://www.midttrafik.dk/rejsemuligheder/lufthavnsbusser/aarhus-airport_english/" target="_blank">a shuttle bus (route 925X)</a> 
+          leaves just outside the arrival hall and brings you directly to Aarhus Central Station 
+          in ~45–50 minutes. Busses run in connection with flight arrivals, so you generally won’t need to wait long. 
+          
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Accommodation</h2>
+      <p> We recommend <a href="https://www.scandichotels.com/en/hotels/scandic-the-mayor?utm_source=google&utm_medium=cpc&utm_campaign=DK+%7C+Brand+%7C+Generic&gad_source=1&gad_campaignid=728426289&gclid=CjwKCAiAraXJBhBJEiwAjz7MZQ8usTVtUbW_wkk7mj_jnFGa9aX8WPawx5hw0O3_NTFBHP3EqOayBhoC2wUQAvD_BwE" target="_blank">Scandic The Mayor</a>, located in the centre of Aarhus near the main train station. 
+      </p>
+      <p>Promocode to access discounted rate for booking will be available soon.</p>
+    </section>
+    <section>
+      <h2>Sponsors</h2>
+      <p>
+        This event is made possible thanks to support from the
+        <a href="https://ddeacademy.dk/">Danish Diabetes & Endocrine Academy</a> and <a href="https://www.stenoaarhus.dk/english/">Steno Diabetes Center Aarhus</a>.
+      </p>
+      <p>
+        We are still welcoming additional sponsors. If your company or organisation is interested in supporting this event, 
+        please get in touch with us at <a href="mailto:ninaz@ph.au.dk">ninaz@ph.au.dk</a>.
+      </p>
+    </section>
+    <section>
+      <h2>Letters of Invitation</h2>
+      <p>
+        If you need an invitation letter, please contact the event organizer at 
+        <a href="mailto:ninaz@ph.au.dk">ninaz@ph.au.dk</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Organizing Committee</h2>
+      <ul>
+        <li>Nina Ziegenbein, M.Sc., PhD student, Steno Diabetes Center Aarhus, Aarhus</li>
+        <li>Jens Hohwü Voigt, MD, PhD student, Steno Diabetes Center Aarhus, Aarhus</li>
+        <li>Jens Lund, M.Sc., PhD, PhD, Postdoc, Novo Nordisk Center for Basic Metabolic Research, Copenhagen</li>
+        <li>Zach Gerhart-Hines, PhD, Associate Professor, Novo Nordisk Center for Basic Metabolic Research, Copenhagen</li>
+      </ul>
     </section>
 
     <section>
       <h2>Contact</h2>
       <p>
-        For questions, please reach out to 
-        <a href="mailto:ninaz@ph.au.dk">ninaz@ph.au.dk</a>.
+        For questions or changes related to your registration, please contact secretary 
+        <a href="mailto:inger.hornbech@rm.dk">Inger Hornbech</a>.<br>
+        For program-related questions or if you require an invitation letter, please contact 
+        <a href="mailto:ninaz@ph.au.dk">Nina Ziegenbein</a>.
       </p>
     </section>
+
   </main>
 
   <footer>
     © 2026 Networking & Collaboration Event on Whole-room Indirect Calorimetry
   </footer>
 </body>
+<script>
+  function toggleDetails(id) {
+    const box = document.getElementById(id);
+    box.style.display = box.style.display === "block" ? "none" : "block";
+  }
+  document.querySelectorAll(".speaker-header").forEach(header => {
+    header.addEventListener("click", () => {
+      const target = document.getElementById(header.dataset.target);
+      const arrow = header.querySelector(".arrow");
+
+      target.classList.toggle("hidden");
+      header.classList.toggle("open");
+    });
+  });
+
+</script>
 </html>
