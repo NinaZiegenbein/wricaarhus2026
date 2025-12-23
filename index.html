@@ -95,10 +95,12 @@
       border-radius: 6px;
     }
     .banner-header {
-      background: url("assets/banner.jpg") center / cover no-repeat;
+      background: url("assets/bred_b kopier.jpg") center top no-repeat;
       color: white;
-      padding: 4rem 1rem;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      width: 100vw;
+      aspect-ratio: 2948 / 654;
+      background-size: 100% auto;
+      padding: 0;
     }
     .accordion-header {
       background: none;
@@ -156,20 +158,69 @@
     .open .arrow {
       transform: rotate(90deg);
     }
+    .top-nav {
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .top-nav nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0rem 0rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      line-height: 0;
+    }
+
+    .top-nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.95rem;
+      line-height: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 3rem;
+    }
+
 
 
   </style>
 </head>
 
 <body>
+  <header class="top-nav">
+    <nav>
+      <a href="#registration">Register</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#about">About</a>
+      <a href="#abstracts">Abstracts</a>
+      <a href="#travel">Travel</a>
+      <a href="#accommodation">Accommodation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <header class="banner-header">
-    <h1>Networking & Collaboration Event<br>on Whole-room Indirect Calorimetry</h1>
-    <p><strong>26 – 27 February 2026 · Aarhus, Denmark</strong></p>
   </header>
 
   <main>
 
-    <section>
+    <section id="registration">
       <h2>Practical Information</h2>
       <p>
         📍 <strong>Venue:</strong> Aarhus University Hospital, Steno Diabetes Center Aarhus — Auditorium Verdensrummet<br>
@@ -191,7 +242,7 @@
       </p>
     </section>
 
-    <section>
+    <section id ="speakers">
       <h2>Confirmed Keynote Speakers</h2>
 
       <div class="speaker">
@@ -229,7 +280,7 @@
     
     </section>
 
-    <section>
+    <section id="about">
       <h2>About the Event</h2>
       <p>
         This two-day networking and collaboration event will bring together researchers and clinicians 
@@ -254,7 +305,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="abstracts">
       <h2>Abstract Submission</h2>
       <p>
         We encourage all participants to submit an abstract describing their research. 
@@ -274,7 +325,7 @@
         Notification of acceptance will be sent no later than Monday, February 2, 2026.
       </p>
     </section>
-    <section>
+    <section id="travel">
       <h2>Travel Information</h2>
       <p>If you plan to fly, you have several convenient options for arriving in Aarhus:</p>
       <ul>
@@ -309,7 +360,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="accommodation">
   <h2>Accommodation</h2>
     <p>
       We recommend 
@@ -342,7 +393,9 @@
       <h2>Sponsors</h2>
       <p>
         This event is made possible thanks to support from the
-        <a href="https://ddeacademy.dk/">Danish Diabetes & Endocrine Academy</a> and <a href="https://www.stenoaarhus.dk/english/">Steno Diabetes Center Aarhus</a>.
+        <a href="https://www.carlsbergfondet.dk/en">Carlsberg Foundation (grant CF25 -2129)</a>,
+        <a href="https://ddeacademy.dk/">Danish Diabetes & Endocrine Academy</a> and 
+        <a href="https://www.stenoaarhus.dk/english/">Steno Diabetes Center Aarhus</a>.
       </p>
       <p>
         We are still welcoming additional sponsors. If your company or organisation is interested in supporting this event, 
@@ -367,7 +420,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <p>
         For questions or changes related to your registration, please contact secretary 
