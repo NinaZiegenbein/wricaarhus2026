@@ -165,6 +165,26 @@
       top: 0;
       z-index: 20;
     }
+    .top-nav a[href="#program"] {
+      background: #990033; 
+      color: white;
+      padding-top: 0;
+      padding: 0.62rem 0.6rem;
+      border-radius: 4px;
+      line-height: 0;
+      margin-top: -0.5rem;
+      margin-bottom: -0.5rem;
+    }
+    .new-badge_top {
+      background: yellow;
+      color: black;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 0.3rem 0.3rem;
+      margin-left: 0.3rem;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
 
     .top-nav nav {
       max-width: 1000px;
@@ -190,25 +210,17 @@
     .top-nav a:hover {
       text-decoration: underline;
     }
-    .top-nav a[href="#travel-support"] {
-      background: #990033; 
-      color: white;
-      padding-top: 0;
-      padding: 0.5rem 0.6rem;
-      border-radius: 4px;
-      line-height: 0;
-      margin-top: -0.5rem;
-      margin-bottom: -0.5rem;
-    }
+
     .new-badge {
       background: yellow;
       color: black;
       font-size: 0.8rem;
       font-weight: bold;
-      padding: 0.3rem 0.3rem;
-      margin-left: 0.3rem;
+      padding: 0.2rem 0.4rem;
       border-radius: 3px;
-      vertical-align: middle;
+      position: absolute;
+      top: -18px;
+      right: -8px;
     }
 
 
@@ -228,10 +240,11 @@
   <header class="top-nav">
     <nav>
       <a href="#registration">Register</a>
+      <a href="#program">Program <span class="new-badge_top">New</span></a>
       <a href="#speakers">Speakers</a>
       <a href="#about">About</a>
       <a href="#abstracts">Abstracts</a>
-      <a href="#travel-support">Travel Support <span class="new-badge">New</span></a>
+      <a href="#travel-support">Travel Support</a>
       <a href="#travel">Travel</a>
       <a href="#accommodation">Accommodation</a>
       <a href="#contact">Contact</a>
@@ -243,7 +256,7 @@
 
   <main>
 
-    <section id="registration">
+    <section id="program">
       <h2>Practical Information</h2>
       <p>
         📍 <strong>Venue:</strong> Aarhus University Hospital, Steno Diabetes Center Aarhus — Auditorium Verdensrummet<br>
@@ -255,19 +268,21 @@
         <a class="register-btn" href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Frm.plan2learn.dk%2Fdl.aspx%3Fxmg%3D13a4117b-f630-4889-9f77-56f41a39348e%26r%3DKursusValg.aspx%3Fid%3D141428&data=05%7C02%7Cninaz%40ph.au.dk%7Cd7864f622fb4422da13e08de2cc8dffa%7C61fd1d36fecb47cab7d7d0df0370a198%7C1%7C0%7C638997438443552132%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lZKXYmYqLsECunLMn7l6CSGFjJiS0d8zekfi5kkjG9Q%3D&reserved=0">
           Register Here
         </a>
+        <a class="register-btn" href="assets/Program_WRICEvent2026.pdf" target="_blank" style="margin-left:1rem; position: relative;">
+        Program (PDF)
+        <span class="new-badge">NEW</span>
+      </a>
       </p>
       <p>
-      ⏰ <strong>Deadlines extended!:</strong>
+      ⏰ <strong>Deadlines:</strong>
         <ul>
-          <li>Abstract submission: 
-            <del>Monday, 19 January 2026</del>
+          <li style="color: grey;">Abstract submission: 
             <strong>Sunday, 8 February 2026</strong> (end of day, CET)</li>
           <li>Event registration: 
             <strong>Sunday, 15 February 2026</strong> (end of day, CET)</li> 
         </ul>
       </p>
     </section>
-
     <section id ="speakers">
       <h2>Confirmed Keynote Speakers</h2>
 
@@ -352,7 +367,7 @@
       </p>
     </section>
 
-    <section class="travel-support" id="travel-support">
+    <section id="travel-support">
       <h2>Travel & Accommodation Support for Early-Career Researchers</h2>
       <p>
         Thanks to generous funding, we are able to offer travel and accommodation support for early-career researchers (PhD students and Postdocs) from outside Denmark. 
@@ -449,6 +464,11 @@
         <a href="https://www.carlsbergfondet.dk/en">Carlsberg Foundation (grant CF25 -2129)</a>,
         <a href="https://ddeacademy.dk/">Danish Diabetes & Endocrine Academy</a> and 
         <a href="https://www.stenoaarhus.dk/english/">Steno Diabetes Center Aarhus</a>.
+      </p>
+       <p>
+        <strong>Industry Sponsor:</strong><br>
+        We gratefully acknowledge additional support from 
+        <a href="https://www.sablesys.com/">Sable Systems International</a>.
       </p>
       <p>
         We are still welcoming additional sponsors. If your company or organisation is interested in supporting this event, 
